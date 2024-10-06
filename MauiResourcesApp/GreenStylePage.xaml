@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiResourcesApp.GreenStylePage"
+             Title="GreenStylePage">
+    <ContentPage.Resources>
+        <ResourceDictionary Source="MyResources/GreenStyle.xaml"/>
+    </ContentPage.Resources>
+    <StackLayout>
+        <Label Text="Moscow" Style="{StaticResource GreenStyleLabel}"/>
+        <Button x:Name="btnMoscow" Text="Moscow" Style="{StaticResource GreenStyleButton}"/>
+        <Label Text="St Peterburg" Style="{StaticResource GreenStyleLabel}"/>
+        <Button x:Name="btnPeterbug" Text="St Peterburg" Style="{StaticResource GreenStyleButton}"/>
+    </StackLayout>
+</ContentPage>

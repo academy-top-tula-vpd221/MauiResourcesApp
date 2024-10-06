@@ -1,0 +1,16 @@
+﻿button{
+    background-color: #ff0000;
+    margin: 50 20;
+}
+
+.redText{
+    color: red;
+}
+
+#title{
+    font-style: italic;
+}
+
+^ContentPage{
+    font-size: 30;
+}

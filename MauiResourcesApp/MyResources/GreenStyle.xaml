@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiResourcesApp.MyResources.GreenStyle">
+    <Style x:Key="GreenStyleButton" TargetType="Button">
+        <Setter Property="TextColor" Value="#ffddffdd"/>
+        <Setter Property="BackgroundColor" Value="#ff003300"/>
+        <Setter Property="Padding" Value="20"/>
+        <Setter Property="Margin" Value="30"/>
+    </Style>
+    <Style x:Key="GreenStyleLabel" TargetType="Label">
+        <Setter Property="TextColor" Value="#ff003300"/>
+        <Setter Property="BackgroundColor" Value="#ffddffdd"/>
+        <Setter Property="Padding" Value="20"/>
+        <Setter Property="Margin" Value="30"/>
+    </Style>
+</ResourceDictionary>

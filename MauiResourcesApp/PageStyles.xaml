@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiResourcesApp.PageStyles"
+             Title="PageStyles">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="DarkRed">#ff330000</Color>
+            <Style x:Key="btnStyle" TargetType="Button">
+                <Setter Property="TextColor" Value="#ffffdddd"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource DarkRed}"/>
+                <Setter Property="Padding" Value="20"/>
+                <Setter Property="Margin" Value="30"/>
+            </Style>
+            <Style x:Key="btnStyleTwo" TargetType="Button" BasedOn="{StaticResource btnStyle}">
+                <Setter Property="FontSize" Value="30"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout Padding="20">
+        <Label Text="Moscow"/>
+        <Button x:Name="btnMoscow" Text="Moscow" Style="{StaticResource btnStyle}"/>
+        <Label Text="St Peterburg"/>
+        <Button x:Name="btnPeterbug" Text="St Peterburg" Style="{StaticResource btnStyleTwo}"/>
+        
+    </StackLayout>
+</ContentPage>
